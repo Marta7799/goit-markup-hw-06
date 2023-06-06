@@ -485,33 +485,34 @@
               <form action="javascript:void(0);" method="POST">
   <form>
     <p class="modal-title">Zostaw swoje dane w formularzu poniżej</p>
-    <label>
+    <label class="name" for="user-name">
     <p class="form-title">Imie</p>
-    <input class="modal-input name" type="text" name="name" value="" />
+    <input class="modal-input name" type="text" name="name" id="user-name" />
   </label>
-   <label>
+   <label class="phone" for="user-phone">
     <p class="form-title">Telefon</p>
     <input class="modal-input phone"
       type="tel"
       name="phone"
-      value=""
+      id="user=phone"
     />
   </label>
-  <label>
+  <label class="email" for="user-email">
     <p class="form-title">Email</p>
     <input class="modal-input email"
       type="email"
       name="email"
-      value=""
+      id="user-email"
     />
   </label>
-  <label>
+  <label class="feedback" for="user-feedback">
     <p class="form-title">Komentarz</p>
-    <textarea class="feedback-text" name="feedback" rows="5" placeholder="Wprowadź tekst"></textarea>
+    <textarea class="feedback-text" name="feedback" id="user-feedback" placeholder="Wprowadź tekst"></textarea>
   </label>
-  <label class="modal-regulations">
-    <input type="checkbox" name="regulations" />
-    Oświadczam iż akceptuję <a class="blue-accents" href="">Regulamin</a> i <a class="blue-accents" href="">Politykę Prywatności.</a>
+  <label class="modal-regulations" for="user-regulations">
+    <input class="acceptance checkbox-hidden" type="checkbox" name="regulations" id="user-regulations"/>
+    <svg class="regulations-icon" width="16" height="15"> <use href="images/icons.svg#icon-icon-check"></use></svg>
+    <p class="regulations">Oświadczam iż akceptuję <a class="blue-accents" href="">Regulamin</a> i <a class="blue-accents" href="">Politykę Prywatności.</a></p>
   </label>
   <div class="sending">
     <button class="modal-button" type="submit">Wyślij</button>
