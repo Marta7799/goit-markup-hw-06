@@ -482,6 +482,41 @@
                 <use href="images/icons.svg#icon-close-black-18dp-2-1"></use>
               </svg>
               </button>
+              <form action="javascript:void(0);" method="POST">
+  <form>
+    <p class="modal-title">Zostaw swoje dane w formularzu poniżej</p>
+    <label>
+    <p class="form-title">Imie</p>
+    <input class="modal-input name" type="text" name="name" value="" />
+  </label>
+   <label>
+    <p class="form-title">Telefon</p>
+    <input class="modal-input phone"
+      type="tel"
+      name="phone"
+      value=""
+    />
+  </label>
+  <label>
+    <p class="form-title">Email</p>
+    <input class="modal-input email"
+      type="email"
+      name="email"
+      value=""
+    />
+  </label>
+  <label class="feedback">
+    <p class="form-title">Komentarz</p>
+    <textarea class="feedback-text" name="feedback" placeholder="Wprowadź tekst"></textarea>
+  </label>
+  <label class="modal-regulations">
+    <input type="checkbox" name="regulations" />
+    Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę Prywatności.</a>
+  </label>
+  <div class="sending">
+    <button class="modal-button" type="submit">Wyślij</button>
+  </div>
+</form>
     </div>
     </div>
     <script src="./js/modal.js"></script>
