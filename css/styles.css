@@ -331,12 +331,11 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  letter-spacing: 0.06em;
-
-  color: #ffffff;
 }
 .strength {
   padding-bottom: 0;
