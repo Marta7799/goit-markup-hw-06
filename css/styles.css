@@ -263,11 +263,18 @@ a {
   color: #212121;
   margin-bottom: 12px;
 }
+.label {
+  display: block;
+  margin-bottom: 10px;
+}
 .user {
   position: relative;
+}
+.form-icon {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  fill: currentColor;
 }
 .form-title {
   font-size: 12px;
