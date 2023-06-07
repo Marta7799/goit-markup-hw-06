@@ -485,40 +485,48 @@
               <form action="javascript:void(0);" method="POST">
   <form>
     <p class="modal-title">Zostaw swoje dane w formularzu poniżej</p>
+    <!--user-->
+    
     <label class="name" for="user-name">
     <p class="form-title">Imie</p>
-    <input class="modal-input name" type="text" name="name" id="user-name" />
-  </label>
+    <div class="user"><input class="modal-input" type="text" name="name" id="user-name" required> <svg class="form-icon" width="12" height="12"><use href="images/icons.svg#icon-Vector"></use></svg>
+ </div></label> 
+  
    <label class="phone" for="user-phone">
     <p class="form-title">Telefon</p>
-    <input class="modal-input phone"
+    <div class="user"><input class="modal-input"
       type="tel"
       name="phone"
-      id="user=phone"
-    />
-  </label>
+      id="user=phone" required> <svg class="form-icon" width="13" height="13"><use href="images/icons.svg#icon-Vector-2"></use></svg>
+  </div></label>
+  
+  
   <label class="email" for="user-email">
     <p class="form-title">Email</p>
-    <input class="modal-input email"
+    <div class="user"><input class="modal-input"
       type="email"
       name="email"
-      id="user-email"
-    />
-  </label>
+      id="user-email" required> <svg class="form-icon" width="15" height="12"><use href="images/icons.svg#icon-Vector-3"></use></svg>
+  </div></label>
+  
   <label class="feedback" for="user-feedback">
     <p class="form-title">Komentarz</p>
     <textarea class="feedback-text" name="feedback" id="user-feedback" placeholder="Wprowadź tekst"></textarea>
   </label>
+  </div>
+<!--icon-checked-->
+  <div class="modal-acceptance">
   <label class="modal-regulations" for="user-regulations">
-    <input class="acceptance checkbox-hidden" type="checkbox" name="regulations" id="user-regulations"/>
-    <svg class="regulations-icon" width="16" height="15"> <use href="images/icons.svg#icon-icon-check"></use></svg>
+    <input class="acceptance checkbox-hidden" type="checkbox" name="regulations" id="user-regulations" required width="16" height="15">
     <p class="regulations">Oświadczam iż akceptuję <a class="blue-accents" href="">Regulamin</a> i <a class="blue-accents" href="">Politykę Prywatności.</a></p>
   </label>
+  </div>
+  <!--sending-->
   <div class="sending">
     <button class="modal-button" type="submit">Wyślij</button>
   </div>
 </form>
-    </div>
+    </div>  
     </div>
     <script src="./js/modal.js"></script>
   </body>
