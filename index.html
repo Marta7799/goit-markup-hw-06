@@ -455,23 +455,22 @@
           method="POST"
           action="javascript:void(0)"
         >
-          <label class="newsletter-label">
+          <label class="newsletter-label" for="mail">
             Zapisz się do newslettera
             <input
               class="newsletter-input"
               type="email"
               name="email"
+              id="mail"
               placeholder="E-mail"
             />
           </label>
-          <div class="newsletter-button">
             <button class="button-submit" type="submit">
               Zapisz się
               <svg class="submit-icon" width="24" height="24">
                 <use href="images/icons.svg#icon-icon-send"></use>
               </svg>
             </button>
-          </div>
         </form>
       </div>
     </footer>
@@ -484,14 +483,12 @@
               </button>
               <form action="javascript:void(0);" method="POST">
   <form class="form">
-    <h3 class="modal-title">Zostaw swoje dane w formularzu poniżej</h3>
+    <p class="modal-title">Zostaw swoje dane w formularzu poniżej</p>
     <!--user-->
-    
     <label class="name" for="user-name">
     <p class="form-title">Imie</p>
     <div class="user"><input class="modal-input" type="text" name="name" id="user-name" required> <svg class="form-icon" width="12" height="12"><use href="images/icons.svg#icon-Vector"></use></svg>
  </div></label> 
-  
    <label class="phone" for="user-phone">
     <p class="form-title">Telefon</p>
     <div class="user"><input class="modal-input"
@@ -499,7 +496,6 @@
       name="phone"
       id="user=phone" required> <svg class="form-icon" width="13" height="13"><use href="images/icons.svg#icon-Vector-2"></use></svg>
   </div></label>
-  
   <label class="email" for="user-email">
     <p class="form-title">Email</p>
     <div class="user"><input class="modal-input"
@@ -507,22 +503,18 @@
       name="email"
       id="user-email" required> <svg class="form-icon" width="15" height="12"><use href="images/icons.svg#icon-Vector-3"></use></svg>
   </div></label>
-  
   <label class="feedback" for="user-feedback">
     <p class="form-title">Komentarz</p>
     <textarea class="feedback-text" name="feedback" id="user-feedback" placeholder="Wprowadź tekst"></textarea>
   </label>
-  </div>
+
 <!--icon-checked-->
 <label class="check option">
   <input class="check__input" type="checkbox">
-  <span class="check__box"></span>
- <p class="regulations">Oświadczam iż akceptuję <a class="blue-accents" href="">Regulamin</a> i <a class="blue-accents" href="">Politykę Prywatności.</a></p>
+  <p class="regulations">Oświadczam iż akceptuję <a class="blue-accents" href="">Regulamin</a> i <a class="blue-accents" href="">Politykę Prywatności.</a></p>
 </label>
   <!--sending-->
-  <div class="sending">
     <button class="modal-button" type="submit">Wyślij</button>
-  </div>
 </form>
     </div>  
     </div>
