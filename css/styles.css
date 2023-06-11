@@ -292,13 +292,16 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
+  outline: transparent;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus + .form-icon,
 .modal-input:hover + .form-icon {
-  border: 1px solid #2196f3;
-  outline: none;
   fill: #2196f3;
+}
+.modal-input:focus,
+.modal-input:hover {
+  border: 1px solid #2196f3;
 }
 .name {
   display: block;
@@ -331,6 +334,7 @@ a {
   line-height: 1.17;
   letter-spacing: 0.01em;
   padding: 12px 16px;
+  outline: transparent;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .textarea {
@@ -347,7 +351,6 @@ a {
 .feedback-text:focus-within,
 .feedback-text:hover {
   border: 1px solid #2196f3;
-  outline: none;
 }
 .option {
   display: block;
@@ -356,7 +359,7 @@ a {
 /* Check */
 
 .check {
-  padding-left: 1.2em;
+  padding-left: 30px;
   margin-bottom: 30px;
 }
 
@@ -370,8 +373,8 @@ a {
 
 .check__box {
   position: absolute;
-  top: 25px;
-  left: 55px;
+  top: 0px;
+  left: 2px;
   width: 16px;
   height: 15px;
   overflow: hidden;
@@ -462,6 +465,9 @@ a {
 }
 .strengths-text:not(:last-child) {
   margin-right: 30px;
+}
+.doing {
+  padding-top: 0;
 }
 .doing-list {
   display: flex;
